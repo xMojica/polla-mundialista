@@ -1,0 +1,75 @@
+import type { PoolState } from '../types'
+
+const now = new Date().toISOString()
+
+export const defaultPoolState: PoolState = {
+  title: 'Polla Mundialista 2026',
+  subtitle: 'Primera ronda - gana quien más marcadores exactos acierte',
+  prize: '$20.000',
+  updatedAt: now,
+  participants: [
+    {
+      id: 'demo-1',
+      name: 'Santiago R.',
+      createdAt: now,
+      predictions: {
+        'mx-sa': { home: 2, away: 0 },
+        'py-us': { home: 1, away: 1 },
+        'br-ma': { home: 3, away: 1 },
+        'co-uz': { home: 2, away: 0 },
+        'en-hr': { home: 2, away: 1 },
+        'co-cd': { home: 3, away: 0 },
+        'ec-de': { home: 1, away: 2 },
+        'uy-es': { home: 1, away: 2 },
+        'fr-no': { home: 2, away: 0 },
+        'co-pt': { home: 1, away: 1 },
+      },
+    },
+    {
+      id: 'demo-2',
+      name: 'Luisa G.',
+      createdAt: now,
+      predictions: {
+        'mx-sa': { home: 1, away: 0 },
+        'py-us': { home: 0, away: 1 },
+        'br-ma': { home: 2, away: 0 },
+        'co-uz': { home: 1, away: 0 },
+        'en-hr': { home: 1, away: 1 },
+        'co-cd': { home: 2, away: 0 },
+        'ec-de': { home: 0, away: 2 },
+        'uy-es': { home: 0, away: 1 },
+        'fr-no': { home: 3, away: 1 },
+        'co-pt': { home: 2, away: 1 },
+      },
+    },
+    {
+      id: 'demo-3',
+      name: 'Carlos V.',
+      createdAt: now,
+      predictions: {
+        'mx-sa': { home: 2, away: 1 },
+        'py-us': { home: 2, away: 1 },
+        'br-ma': { home: 2, away: 2 },
+        'co-uz': { home: 3, away: 1 },
+        'en-hr': { home: 0, away: 0 },
+        'co-cd': { home: 2, away: 1 },
+        'ec-de': { home: 1, away: 1 },
+        'uy-es': { home: 1, away: 1 },
+        'fr-no': { home: 2, away: 0 },
+        'co-pt': { home: 1, away: 0 },
+      },
+    },
+  ],
+  matches: [
+    { id: 'mx-sa', homeTeam: 'Mexico', awayTeam: 'Sudafrica', kickoff: '11 Jun - 15:00', actualScore: null },
+    { id: 'py-us', homeTeam: 'Paraguay', awayTeam: 'Estados Unidos', kickoff: '12 Jun - 21:00', actualScore: null },
+    { id: 'br-ma', homeTeam: 'Brasil', awayTeam: 'Marruecos', kickoff: '13 Jun - 18:00', actualScore: null },
+    { id: 'co-uz', homeTeam: 'Colombia', awayTeam: 'Uzbekistan', kickoff: '17 Jun - 22:00', actualScore: null },
+    { id: 'en-hr', homeTeam: 'Inglaterra', awayTeam: 'Croacia', kickoff: '17 Jun - 16:00', actualScore: null },
+    { id: 'co-cd', homeTeam: 'Colombia', awayTeam: 'RD Congo', kickoff: '23 Jun - 22:00', actualScore: null },
+    { id: 'ec-de', homeTeam: 'Ecuador', awayTeam: 'Alemania', kickoff: '25 Jun - 16:00', actualScore: null },
+    { id: 'uy-es', homeTeam: 'Uruguay', awayTeam: 'Espana', kickoff: '26 Jun - 20:00', actualScore: null },
+    { id: 'fr-no', homeTeam: 'Francia', awayTeam: 'Noruega', kickoff: '26 Jun - 15:00', actualScore: null },
+    { id: 'co-pt', homeTeam: 'Colombia', awayTeam: 'Portugal', kickoff: '27 Jun - 19:30', actualScore: null },
+  ],
+}
